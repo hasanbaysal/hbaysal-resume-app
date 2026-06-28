@@ -5,10 +5,18 @@ function App() {
   const { personal, skills, workHistory, education, certifications, languages, projects } = data;
   const [activeSection, setActiveSection] = useState('hero');
   const [activeProjectIdx, setActiveProjectIdx] = useState(0);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   // Auto-spy scroll section highlighting
   useEffect(() => {
     const handleScroll = () => {
+      // Show/hide back to top button
+      if (window.scrollY > 300) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+
       const sections = ['experience', 'projects', 'skills', 'education'];
       const scrollPosition = window.scrollY + 200;
 
@@ -377,6 +385,16 @@ function App() {
           </div>
         </footer>
       </div>
+
+      {showScrollTop && (
+        <button 
+          className="back-to-top" 
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          aria-label="Back to top"
+        >
+          ↑
+        </button>
+      )}
     </>
   );
 }
