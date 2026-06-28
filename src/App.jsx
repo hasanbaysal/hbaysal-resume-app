@@ -174,8 +174,8 @@ function App() {
           </div>
 
           <div className="carousel-wrapper">
-            <div className="carousel-click-overlay prev-overlay" onClick={prevProject}></div>
-            <div className="carousel-click-overlay next-overlay" onClick={nextProject}></div>
+            <div className="carousel-click-zone prev-zone" onClick={prevProject} aria-label="Previous" />
+            <div className="carousel-click-zone next-zone" onClick={nextProject} aria-label="Next" />
             <div className="carousel-container">
               {projects.map((project, idx) => {
                 // Determine 3D stack position class
