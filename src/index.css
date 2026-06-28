@@ -398,6 +398,11 @@ a {
   pointer-events: auto;
 }
 
+.carousel-card.prev:hover {
+  opacity: 0.7;
+  transform: translate3d(-58%, 0, -120px) scale(0.87) rotateY(20deg);
+}
+
 .carousel-card.next {
   transform: translate3d(60%, 0, -150px) scale(0.85) rotateY(-25deg);
   opacity: 0.45;
@@ -406,28 +411,30 @@ a {
   pointer-events: auto;
 }
 
-.carousel-click-overlay {
-  position: absolute;
-  top: 20px;
-  height: 380px;
-  width: 25%;
-  z-index: 8;
-  cursor: pointer;
-  transition: var(--transition-fast);
-  border-radius: 20px;
+.carousel-card.next:hover {
+  opacity: 0.7;
+  transform: translate3d(58%, 0, -120px) scale(0.87) rotateY(-20deg);
 }
 
-.carousel-click-overlay.prev-overlay {
+
+.carousel-click-zone {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 28%;
+  z-index: 10;
+  cursor: pointer;
+  background: transparent;
+}
+
+.carousel-click-zone.prev-zone {
   left: 0;
 }
 
-.carousel-click-overlay.next-overlay {
+.carousel-click-zone.next-zone {
   right: 0;
 }
 
-.carousel-click-overlay:hover {
-  background: rgba(255, 255, 255, 0.02);
-}
 
 .carousel-card.hidden {
   transform: translate3d(0, 0, -300px) scale(0.7);
@@ -436,6 +443,7 @@ a {
   pointer-events: none;
   visibility: hidden;
 }
+
 
 /* Optional Project Image styles */
 .project-image-box {
@@ -810,3 +818,31 @@ a {
     z-index: 12;
   }
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  color: var(--text-primary);
+  border: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 100;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top:hover {
+  background-color: var(--accent-light);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+}
+

@@ -5,10 +5,18 @@ function App() {
   const { personal, skills, workHistory, education, certifications, languages, projects } = data;
   const [activeSection, setActiveSection] = useState('hero');
   const [activeProjectIdx, setActiveProjectIdx] = useState(0);
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   // Auto-spy scroll section highlighting
   useEffect(() => {
     const handleScroll = () => {
+      // Show/hide back to top button
+      if (window.scrollY > 300) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+
       const sections = ['experience', 'projects', 'skills', 'education'];
       const scrollPosition = window.scrollY + 200;
 
@@ -166,8 +174,8 @@ function App() {
           </div>
 
           <div className="carousel-wrapper">
-            <div className="carousel-click-overlay prev-overlay" onClick={prevProject}></div>
-            <div className="carousel-click-overlay next-overlay" onClick={nextProject}></div>
+            <div className="carousel-click-zone prev-zone" onClick={prevProject} aria-label="Previous" />
+            <div className="carousel-click-zone next-zone" onClick={nextProject} aria-label="Next" />
             <div className="carousel-container">
               {projects.map((project, idx) => {
                 // Determine 3D stack position class
@@ -377,6 +385,16 @@ function App() {
           </div>
         </footer>
       </div>
+
+      {showScrollTop && (
+        <button 
+          className="back-to-top" 
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          aria-label="Back to top"
+        >
+          ↑
+        </button>
+      )}
     </>
   );
 }
