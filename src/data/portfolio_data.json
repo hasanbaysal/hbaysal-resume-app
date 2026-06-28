@@ -1,0 +1,228 @@
+{
+  "personal": {
+    "name": "Hasan Baysal",
+    "title": "Backend Developer",
+    "location": "Ankara, Turkey",
+    "email": "hasan.baysall@gmail.com",
+    "phone": "+90 0534 515 0229",
+    "github": "https://github.com/hasanbaysal",
+    "linkedin": "https://linkedin.com/in/hasanbaysal/",
+    "bio": "I work as a backend developer in the .NET ecosystem. I've spent a good amount of time building APIs with ASP.NET Core, figuring out microservices architectures, and wrestling with geospatial data (GIS). I care about system design and database performance—not just making things work, but making sure the code actually makes sense to whoever reads it later.",
+    "blog": {
+      "enabled": true,
+      "url": "https://blog.hbaysal.com"
+    }
+  },
+  "skills": {
+    "languagesFrameworks": [
+      "C#",
+      "Javascript",
+      "ASP.NET Core",
+      "EF Core",
+      "Xunit",
+      "React.js"
+    ],
+    "architecture": [
+      "Microservices",
+      "Clean Architecture",
+      "DDD",
+      "SOLID",
+      "Design Patterns"
+    ],
+    "dataGis": [
+      "PostgreSQL",
+      "Elasticsearch",
+      "Redis",
+      "Spatial Databases",
+      "GeoServer"
+    ],
+    "devopsTools": [
+      "Docker",
+      "Docker Compose",
+      "Git",
+      "CI/CD Pipelines",
+      "Linux"
+    ],
+    "aiAssisted": [
+      "Claude Code",
+      "GitHub Copilot"
+    ]
+  },
+  "workHistory": [
+    {
+      "role": "Software Engineer",
+      "company": "FarmLabs Agriculture Technologies",
+      "location": "Ankara, Turkey",
+      "period": "January 2025 - Current",
+      "type": "Full-Time",
+      "bullets": [
+        "Developing and maintaining back-end services for a GIS-based agricultural management platform that monitors crop growth through satellite imagery.",
+        "Working on optimization, feature development, and advanced reporting for large-scale geospatial datasets.",
+        "Implementing and maintaining microservice-based architecture to improve scalability and modularity.",
+        "Handling geospatial data types and GeoServer operations for spatial data visualization and processing."
+      ]
+    },
+    {
+      "role": "Software Engineer (Contract)",
+      "company": "Niltek Yazılım Teknolojileri",
+      "location": "Ankara, Turkey (Remote)",
+      "period": "September 2024 - December 2024",
+      "type": "Contract",
+      "bullets": [
+        "Project-based contract engagement. Developed the tender management module of an enterprise resource planning (ERP) system using ASP.NET Core and PostgreSQL.",
+        "Implemented key functionalities such as bid submission, approval workflows, and document tracking.",
+        "Mentored junior developers and provided technical guidance on software architecture, design patterns, and clean code practices."
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "company": "MetalWorm",
+      "location": "Ankara, Turkey",
+      "period": "March 2024 - September 2024",
+      "type": "Full-Time",
+      "bullets": [
+        "Developed the Waam Monitoring App, a real-time monitoring and digital twin application enabling seamless communication between PLC systems and .NET Core backend.",
+        "Integrated industrial robotic arm data for motion control and optimization within manufacturing processes.",
+        "Designed RESTful APIs and visualization components for live process tracking and predictive maintenance insights."
+      ]
+    },
+    {
+      "role": "Software Engineer and Trainer",
+      "company": "BilgeAdam Teknoloji",
+      "location": "Ankara, Turkey",
+      "period": "June 2023 - March 2024",
+      "type": "Full-Time",
+      "bullets": [
+        "Conducted hands-on .NET Core, C#, and EF Core training sessions for over 50 participants, combining theory with practical workshops.",
+        "Designed and developed demo applications demonstrating object-oriented programming (OOP) and database management concepts.",
+        "Mentored junior developers and provided technical guidance on software architecture, design patterns, and clean code practices.",
+        "Created and continuously updated training materials to align with modern .NET ecosystem standards."
+      ]
+    },
+    {
+      "role": "Co-Founder & Lead Developer",
+      "company": "Online Psychologist Center",
+      "location": "Ankara, Turkey (Remote)",
+      "period": "June 2022 - March 2023",
+      "type": "Self-Employed",
+      "bullets": [
+        "Built and deployed online appointment & video consultation platform using ASP.NET Core MVC.",
+        "Integrated 3D Secure payments, DailyCo video calls, SMS, and Google authentication.",
+        "Conducted target market research to scope out industry competition and identify advantageous trends."
+      ]
+    },
+    {
+      "role": "Software Engineering Intern",
+      "company": "Dijital Hoca Eğitim Bilişim",
+      "location": "Ankara, Turkey",
+      "period": "September 2021 - January 2022",
+      "type": "Internship",
+      "bullets": [
+        "Contributed to the development of FlashSet, a WinForms-based offline video education platform running directly from USB drives.",
+        "Implemented encrypted video playback and secure access control to prevent screen recording and data extraction.",
+        "Designed and developed Depo-Kontrol, a distributed inventory and order management system for tracking book stocks across regional dealers."
+      ]
+    },
+    {
+      "role": "Software Engineer Intern",
+      "company": "Vizyoner Danışmanlık & Ajans",
+      "location": "Konya, Turkey",
+      "period": "July 2019 - September 2019",
+      "type": "Internship",
+      "bullets": [
+        "During my internship, I was involved in server maintenance and update processes for existing web application.",
+        "I supported version control and deployment workflows using Git, ensuring stable updates to live environments.",
+        "I also made small improvements and bug fixes in PHP-based modules when needed."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science/Engineering",
+      "school": "Selçuk University",
+      "location": "Konya, Turkey",
+      "period": "January 2022"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Domain-Driven Design (DDD) Specialist",
+      "issuer": "BackendGuru",
+      "year": "2026",
+      "verificationUrl": "https://backendguru.com/verify/12345"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Turkish",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Professional Working"
+    },
+    {
+      "name": "German",
+      "level": "Elementary"
+    }
+  ],
+  "projects": [
+    {
+      "title": "WordApp",
+      "description": "A comprehensive vocabulary learning and tracking application built with a .NET Core API and a modern web frontend, deployable with Docker.",
+      "techStack": [
+        ".NET Core",
+        "React",
+        "PostgreSQL",
+        "Docker",
+        "Nginx"
+      ],
+      "githubUrl": "https://github.com/hasanbaysal/WordApp",
+      "demoUrl": "https://wordapp.dev.hbaysal.com",
+      "demoStatus": "online",
+      "imageUrl": null
+    },
+    {
+      "title": "Waam Monitoring",
+      "description": "A real-time monitoring and digital twin application for industrial robotic arm motion control and predictive maintenance.",
+      "techStack": [
+        ".NET Core",
+        "PLC Integration",
+        "SignalR",
+        "React"
+      ],
+      "githubUrl": "https://github.com/hasanbaysal/waam-monitoring",
+      "demoUrl": null,
+      "demoStatus": "offline",
+      "imageUrl": null
+    },
+    {
+      "title": "Depo-Kontrol",
+      "description": "A distributed inventory and order management system designed for tracking book stocks across regional dealers.",
+      "techStack": [
+        ".NET Core",
+        "SQL Server",
+        "WPF",
+        "Distributed Systems"
+      ],
+      "githubUrl": "https://github.com/hasanbaysal/depo-kontrol",
+      "demoUrl": null,
+      "demoStatus": "offline",
+      "imageUrl": null
+    },
+    {
+      "title": "Online Psychologist Platform",
+      "description": "An online appointment & video consultation platform built featuring 3D Secure payments and Daily.co video integrations.",
+      "techStack": [
+        "ASP.NET Core MVC",
+        "SQL Server",
+        "Daily.co",
+        "SMS API"
+      ],
+      "githubUrl": "https://github.com/hasanbaysal/online-psychologist",
+      "demoUrl": "https://opc.demo.hbaysal.com",
+      "demoStatus": "online",
+      "imageUrl": null
+    }
+  ]
+}
