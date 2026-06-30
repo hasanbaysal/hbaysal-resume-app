@@ -220,7 +220,7 @@ function App() {
                             title={project.demoStatus === 'online' ? "View Demo" : "Demo Offline"}
                             style={{ cursor: project.demoStatus === 'online' ? 'pointer' : 'not-allowed' }}
                           >
-                            <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                            <svg width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                             </svg>
                           </a>
