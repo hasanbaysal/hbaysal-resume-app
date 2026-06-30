@@ -180,7 +180,7 @@
       "githubUrl": "https://github.com/hasanbaysal/WordApp",
       "demoUrl": "https://wordapp.dev.hbaysal.com",
       "demoStatus": "online",
-      "imageUrl": "/public/ss-wordapp.png"
+      "imageUrl": "/ss-wordapp.png"
     },
     {
       "title": "Waam Monitoring",
@@ -221,7 +221,7 @@
       ],
       "githubUrl": "https://github.com/hasanbaysal/online-psychologist",
       "demoUrl": "https://opc.demo.hbaysal.com",
-      "demoStatus": "online",
+      "demoStatus": "offline",
       "imageUrl": null
     }
   ]
