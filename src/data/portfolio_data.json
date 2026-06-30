@@ -174,8 +174,7 @@
         ".NET Core",
         "React",
         "PostgreSQL",
-        "Docker",
-        "Nginx"
+        "Docker"
       ],
       "githubUrl": "https://github.com/hasanbaysal/WordApp",
       "demoUrl": "https://wordapp.dev.hbaysal.com",
@@ -187,25 +186,9 @@
       "description": "A real-time monitoring and digital twin application for industrial robotic arm motion control and predictive maintenance.",
       "techStack": [
         ".NET Core",
-        "PLC Integration",
-        "SignalR",
-        "React"
+        "PLC Integration"
       ],
       "githubUrl": "https://github.com/hasanbaysal/waam-monitoring",
-      "demoUrl": null,
-      "demoStatus": "offline",
-      "imageUrl": null
-    },
-    {
-      "title": "Depo-Kontrol",
-      "description": "A distributed inventory and order management system designed for tracking book stocks across regional dealers.",
-      "techStack": [
-        ".NET Core",
-        "SQL Server",
-        "WPF",
-        "Distributed Systems"
-      ],
-      "githubUrl": "https://github.com/hasanbaysal/depo-kontrol",
       "demoUrl": null,
       "demoStatus": "offline",
       "imageUrl": null
@@ -215,9 +198,7 @@
       "description": "An online appointment & video consultation platform built featuring 3D Secure payments and Daily.co video integrations.",
       "techStack": [
         "ASP.NET Core MVC",
-        "SQL Server",
-        "Daily.co",
-        "SMS API"
+        "EF Core"
       ],
       "githubUrl": "https://github.com/hasanbaysal/online-psychologist",
       "demoUrl": "https://opc.demo.hbaysal.com",
