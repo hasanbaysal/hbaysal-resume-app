@@ -1,0 +1,37 @@
+name: Deploy Resume App to VPS
+
+on:
+  push:
+    branches:
+      - main # (veya master, ana dalın hangisiyse)
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USERNAME }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          # Eğer key yerine şifre kullanacaksan üstteki 'key:' satırını silip password: ${{ secrets.VPS_PASSWORD }} yazabilirsin.
+          script: |
+            # Klasör kontrolü yap, yoksa repoyu klonla, varsa içine girip pull yap
+            if [ ! -d "/opt/hbaysal-resume-app" ]; then
+              cd /opt
+              # Repo public olduğu için sorunsuz klonlayacaktır
+              git clone https://github.com/hasanbaysal/hbaysal-resume-app.git
+              cd hbaysal-resume-app
+            else
+              cd /opt/hbaysal-resume-app
+              # Varsa değişiklikleri sıfırla ve yeni kodları çek
+              git reset --hard
+              git pull origin main
+            fi
+            
+            # Docker container'ını yeniden inşa et ve başlat
+            docker compose up -d --build
+            
+            # Disk şişmemesi için eski/kullanılmayan docker imajlarını temizle
+            docker image prune -f
