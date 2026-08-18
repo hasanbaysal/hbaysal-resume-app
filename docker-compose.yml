@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  resume-app:
+    build: .
+    container_name: hbaysal_resume
+    restart: always
+    ports:
+      - "8082:80" # Nginx Proxy Manager'da hbaysal.com'u bu 8082 portuna yönlendireceğiz.
