@@ -70,8 +70,8 @@
       "type": "Contract",
       "bullets": [
         "Project-based contract engagement. Developed the tender management module of an enterprise resource planning (ERP) system using ASP.NET Core and PostgreSQL.",
-        "Implemented key functionalities such as bid submission, approval workflows, and document tracking.",
-        "Mentored junior developers and provided technical guidance on software architecture, design patterns, and clean code practices."
+        "Implemented key functionalities such as bid submission, approval workflows, and document tracking."
+       
       ]
     },
     {
