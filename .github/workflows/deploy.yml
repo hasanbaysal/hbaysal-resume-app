@@ -15,6 +15,7 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.VPS_SSH_KEY }}
+          port: ${{ secrets.SERVER_PORT }}
           # Eğer key yerine şifre kullanacaksan üstteki 'key:' satırını silip password: ${{ secrets.VPS_PASSWORD }} yazabilirsin.
           script: |
             # Klasör kontrolü yap, yoksa repoyu klonla, varsa içine girip pull yap
